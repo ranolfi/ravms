@@ -69,7 +69,7 @@ Share files between your PC and an Android-x86 virtual machine.
   - `rip` is used to add a predefined IP address to the VM's network interface so that you won't have to edit your `Adb Pull.sh` and `Adb Push.sh` everytime. It must be run *before* running either script in the host.
 
   - `rrscan` is useful to get your recently pushed media to be recognized by media applications (e.g. photos will appear in the gallery without having to reboot.) This script should be run *after* pushing files.  
-  <sub>(Note: it is probably possible to run `adb shell "su -c 'am broadcast -a android.intent.action.MEDIA_MOUNTED -d file:///mnt/sdcard'"` right after `adb push` from the `Adb Push.sh` script, and this eliminates the need for the `rrscan` script. But I haven't tested.</sub>
+  <sub>(Note: it is probably possible to run `adb shell "su -c 'am broadcast -a android.intent.action.MEDIA_MOUNTED -d file:///mnt/sdcard'"` right after `adb push` from the `Adb Push.sh` script, and this eliminates the need for the `rrscan` script. But I haven't tested.)</sub>
 
 ### Support:
 
