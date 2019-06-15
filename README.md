@@ -49,7 +49,9 @@ Share files between your PC and an Android-x86 virtual machine.
     > unable to connect to 192.168.0.8:5555: No route to host  
     > adb: error: failed to get feature set: no devices/emulators found
 
-    then there is no connectivity to the VM. If you indeed are using QEMU-KVM (possibly with `virt-manager`), I have the `rmacvlan` *(TODO: upload/link)* script to aid in getting virtual machines to talk to the host via network.
+    then there is no connectivity to the VM.
+    
+    If you indeed are using QEMU-KVM (possibly with `virt-manager`), I have the [`rmacvlan`](https://gitlab.com/ranolfi/rmacvlan) script to aid in getting virtual machines to talk to the host via network.
 
 2. The first time you run either script, you should expect to see:
 
